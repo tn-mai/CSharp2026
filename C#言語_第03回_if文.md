@@ -378,7 +378,6 @@ if文の練習として、トランプゲームの「ブラックジャック」
    card = 10; // 11以上のカードは10として扱う
  }
  dealerNumber += card; // 引いたカードの番号を合計に足す
- dealerFirstCard = card; // 1枚目のカードを覚えておく
 +
 +// プレイヤーのカード追加
 +Console.WriteLine("あなたのターン");
@@ -420,12 +419,6 @@ if文の練習として、トランプゲームの「ブラックジャック」
 +    Console.WriteLine("引いたカード：" + card);
 +    Console.WriteLine("あなたの合計：" + playerNumber);
 +    Thread.Sleep(1000); // 少し待つ
-+    if (playerNumber > 21)
-+    {
-+      Console.WriteLine("あなたの合計が21を越えてしまった");
-+      Console.WriteLine("あなたの負けです");
-+      return; // ゲーム終了
-+    }
 +  }
 +  else if (s == "2")
 +  {
